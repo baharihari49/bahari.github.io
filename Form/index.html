@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light mb-5">
+        <div class="container">
+          <a class="navbar-brand" href="#">Bahari</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button id="tombol" type="button" class="btn btn-primary ms-1 fw-semibold btn-lg"
+          style="  --bs-btn-bg: #4649FF; --bs-btn-border-color: #4649FF; --bs-btn-hover-border-color: #3437f0; --bs-btn-hover-bg: #3437f0; --bs-btn-padding-y: 0.8rem; --bs-btn-padding-x: 1.2rem; --bs-btn-font-size: .80rem;">
+         Hire Me
+          </button>
+        </div>
+      </nav>
+
+    <!-- INI BAGIAN FORM -->
+   <div style="width: 40vw;" class="container">
+    <div class="row ">
+        <div class="col mx-auto">
+            <form class="pt-3" action="https://formspree.io/f/mnqrgrdk" method="POST">
+                <input required name="nama" type="text" class="form-control mb-3" placeholder="Masukkan Nama Anda" aria-label="Username">
+                <input required type="email" name="email" class="form-control mb-3" placeholder="Masukkan Alamat Email Anda" aria-label="Username">
+                <input required name="noHp" type="text"class="form-control mb-3" placeholder="Masukkan No Hanphone Anda" aria-label="Username">
+                <textarea required name="message" placeholder="Masukkan Pesan Anda" style="height: 200px;" class="form-control mt-3" aria-label="With textarea"></textarea>
+                <a href="../home/index.html">
+                    <button type="button" class="btn btn-secondary ms-1 fw-semibold btn-lg mt-3"
+                    style=" --bs-btn-padding-y: 0.8rem; --bs-btn-padding-x: 1.2rem; --bs-btn-font-size: .80rem;">
+                Kembali
+                </button>
+                </a>
+                <button type="submit" class="btn btn-primary ms-1 fw-semibold btn-lg mt-3"
+                style="  --bs-btn-bg: #4649FF; --bs-btn-border-color: #4649FF; --bs-btn-hover-border-color: #3437f0; --bs-btn-hover-bg: #3437f0; --bs-btn-padding-y: 0.8rem; --bs-btn-padding-x: 1.2rem; --bs-btn-font-size: .80rem;">
+                Kirim Pesan
+                </button>
+            </form>
+        </div>
+    </div>
+   </div>
+
+   <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
